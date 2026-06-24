@@ -381,3 +381,2813 @@ public class youLose extends Actor
 
 //
 //
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Greenfoot Tutorial 4 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//MyWorld
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MyWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MyWorld extends World
+{
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    public MyWorld()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(800, 600, 1); 
+        prepare();
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+
+        TallWall tallWall = new TallWall();
+        addObject(tallWall,32,551);
+        TallWall tallWall2 = new TallWall();
+        addObject(tallWall2,32,477);
+        TallWall tallWall3 = new TallWall();
+        addObject(tallWall3,34,400);
+        TallWall tallWall4 = new TallWall();
+        addObject(tallWall4,34,326);
+        TallWall tallWall5 = new TallWall();
+        addObject(tallWall5,34,257);
+        TallWall tallWall6 = new TallWall();
+        addObject(tallWall6,32,173);
+        TallWall tallWall7 = new TallWall();
+        addObject(tallWall7,33,84);
+        TallWall tallWall8 = new TallWall();
+        addObject(tallWall8,31,126);
+        tallWall6.setLocation(35,215);
+        tallWall6.setLocation(34,148);
+        tallWall7.setLocation(32,41);
+        TallWall tallWall9 = new TallWall();
+        addObject(tallWall9,752,524);
+        TallWall tallWall10 = new TallWall();
+        addObject(tallWall10,750,444);
+        TallWall tallWall11 = new TallWall();
+        addObject(tallWall11,750,355);
+        TallWall tallWall12 = new TallWall();
+        addObject(tallWall12,748,281);
+        TallWall tallWall13 = new TallWall();
+        addObject(tallWall13,751,206);
+        TallWall tallWall14 = new TallWall();
+        addObject(tallWall14,748,127);
+        TallWall tallWall15 = new TallWall();
+        addObject(tallWall15,748,76);
+        TallWall tallWall16 = new TallWall();
+        addObject(tallWall16,753,394);
+        tallWall9.setLocation(751,531);
+        tallWall10.setLocation(755,492);
+        tallWall11.setLocation(752,309);
+        tallWall12.setLocation(749,263);
+        tallWall13.setLocation(751,206);
+        tallWall14.setLocation(752,154);
+        tallWall15.setLocation(750,73);
+        LongestWall longestWall = new LongestWall();
+        addObject(longestWall,152,37);
+        LongestWall longestWall2 = new LongestWall();
+        addObject(longestWall2,484,37);
+        longestWall2.setLocation(562,28);
+        longestWall.setLocation(380,26);
+        LongestWall longestWall3 = new LongestWall();
+        addObject(longestWall3,257,576);
+        LongestWall longestWall4 = new LongestWall();
+        addObject(longestWall4,510,579);
+        longestWall3.setLocation(220,579);
+        longestWall4.setLocation(430,585);
+        Mouse mouse = new Mouse();
+        addObject(mouse,110,78);
+        ShortWall shortWall = new ShortWall();
+        addObject(shortWall,106,129);
+        ShortWall shortWall2 = new ShortWall();
+        addObject(shortWall2,107,159);
+        LongerWall longerWall = new LongerWall();
+        addObject(longerWall,171,120);
+        LongerWall longerWall2 = new LongerWall();
+        addObject(longerWall2,144,122);
+        LongerWall longerWall3 = new LongerWall();
+        addObject(longerWall3,123,121);
+        longerWall.setLocation(164,122);
+        LongestWall longestWall5 = new LongestWall();
+        addObject(longestWall5,164,122);
+        longestWall5.setLocation(1191,131);
+        removeObject(longestWall5);
+        longerWall.setLocation(195,119);
+        longerWall2.setLocation(164,117);
+        longerWall3.setLocation(131,112);
+        longerWall2.setLocation(163,111);
+        longerWall.setLocation(195,120);
+        LongerWall longerWall4 = new LongerWall();
+        addObject(longerWall4,231,122);
+        LongerWall longerWall5 = new LongerWall();
+        addObject(longerWall5,274,123);
+        LongerWall longerWall6 = new LongerWall();
+        addObject(longerWall6,321,124);
+        LongerWall longerWall7 = new LongerWall();
+        addObject(longerWall7,367,125);
+        LongerWall longerWall8 = new LongerWall();
+        addObject(longerWall8,438,128);
+        longerWall8.setLocation(423,126);
+        LongerWall longerWall9 = new LongerWall();
+        addObject(longerWall9,423,126);
+        LongerWall longerWall10 = new LongerWall();
+        addObject(longerWall10,511,131);
+        LongerWall longerWall11 = new LongerWall();
+        addObject(longerWall11,535,127);
+        LongerWall longerWall12 = new LongerWall();
+        addObject(longerWall12,593,137);
+        longerWall12.setLocation(597,134);
+        longestWall2.setLocation(749,90);
+        LongerWall longerWall13 = new LongerWall();
+        addObject(longerWall13,749,90);
+        longestWall2.setLocation(648,33);
+        longerWall13.setLocation(651,154);
+        LongerWall longerWall14 = new LongerWall();
+        addObject(longerWall14,118,223);
+        longerWall14.setLocation(129,234);
+        LongerWall longerWall15 = new LongerWall();
+        addObject(longerWall15,129,234);
+        LongerWall longerWall16 = new LongerWall();
+        addObject(longerWall16,199,269);
+        longerWall16.setLocation(205,271);
+        LongerWall longerWall17 = new LongerWall();
+        addObject(longerWall17,205,271);
+        LongerWall longerWall18 = new LongerWall();
+        addObject(longerWall18,257,240);
+        LongerWall longerWall19 = new LongerWall();
+        addObject(longerWall19,328,220);
+        LongerWall longerWall20 = new LongerWall();
+        addObject(longerWall20,337,248);
+        LongerWall longerWall21 = new LongerWall();
+        addObject(longerWall21,350,296);
+        longerWall21.setLocation(350,296);
+        longerWall21.setLocation(368,278);
+        LongerWall longerWall22 = new LongerWall();
+        addObject(longerWall22,368,278);
+        LongerWall longerWall23 = new LongerWall();
+        addObject(longerWall23,405,237);
+        LongerWall longerWall24 = new LongerWall();
+        addObject(longerWall24,473,214);
+        LongerWall longerWall25 = new LongerWall();
+        addObject(longerWall25,478,255);
+        LongerWall longerWall26 = new LongerWall();
+        addObject(longerWall26,488,287);
+        LongerWall longerWall27 = new LongerWall();
+        addObject(longerWall27,517,354);
+        longerWall27.setLocation(517,354);
+        LongerWall longerWall28 = new LongerWall();
+        addObject(longerWall28,519,313);
+        LongerWall longerWall29 = new LongerWall();
+        addObject(longerWall29,546,260);
+        longerWall29.setLocation(547,260);
+        LongerWall longerWall30 = new LongerWall();
+        addObject(longerWall30,574,322);
+        LongerWall longerWall31 = new LongerWall();
+        addObject(longerWall31,577,349);
+        LongerWall longerWall32 = new LongerWall();
+        addObject(longerWall32,578,382);
+        LongerWall longerWall33 = new LongerWall();
+        addObject(longerWall33,527,427);
+        LongerWall longerWall34 = new LongerWall();
+        addObject(longerWall34,392,419);
+        LongerWall longerWall35 = new LongerWall();
+        addObject(longerWall35,361,397);
+        LongerWall longerWall36 = new LongerWall();
+        addObject(longerWall36,353,367);
+        LongerWall longerWall37 = new LongerWall();
+        addObject(longerWall37,422,308);
+        LongerWall longerWall38 = new LongerWall();
+        addObject(longerWall38,446,364);
+        LongerWall longerWall39 = new LongerWall();
+        addObject(longerWall39,480,418);
+        LongerWall longerWall40 = new LongerWall();
+        addObject(longerWall40,449,438);
+        LongerWall longerWall41 = new LongerWall();
+        addObject(longerWall41,181,456);
+        LongerWall longerWall42 = new LongerWall();
+        addObject(longerWall42,177,416);
+        LongerWall longerWall43 = new LongerWall();
+        addObject(longerWall43,200,351);
+        LongerWall longerWall44 = new LongerWall();
+        addObject(longerWall44,265,296);
+        LongerWall longerWall45 = new LongerWall();
+        addObject(longerWall45,374,404);
+        LongerWall longerWall46 = new LongerWall();
+        addObject(longerWall46,361,466);
+        longerWall46.setLocation(361,466);
+        LongerWall longerWall47 = new LongerWall();
+        addObject(longerWall47,361,466);
+        LongerWall longerWall48 = new LongerWall();
+        addObject(longerWall48,329,420);
+        LongerWall longerWall49 = new LongerWall();
+        addObject(longerWall49,311,392);
+        LongerWall longerWall50 = new LongerWall();
+        addObject(longerWall50,291,362);
+        LongerWall longerWall51 = new LongerWall();
+        addObject(longerWall51,283,345);
+        longerWall51.setLocation(366,327);
+        LongerWall longerWall52 = new LongerWall();
+        addObject(longerWall52,366,327);
+        LongerWall longerWall53 = new LongerWall();
+        addObject(longerWall53,418,335);
+        LongerWall longerWall54 = new LongerWall();
+        addObject(longerWall54,406,374);
+        LongerWall longerWall55 = new LongerWall();
+        addObject(longerWall55,406,412);
+        LongerWall longerWall56 = new LongerWall();
+        addObject(longerWall56,410,420);
+        LongerWall longerWall57 = new LongerWall();
+        addObject(longerWall57,463,409);
+        LongerWall longerWall58 = new LongerWall();
+        addObject(longerWall58,526,373);
+        LongerWall longerWall59 = new LongerWall();
+        addObject(longerWall59,553,352);
+        LongerWall longerWall60 = new LongerWall();
+        addObject(longerWall60,630,313);
+        LongerWall longerWall61 = new LongerWall();
+        addObject(longerWall61,627,280);
+        LongerWall longerWall62 = new LongerWall();
+        addObject(longerWall62,634,360);
+        LongerWall longerWall63 = new LongerWall();
+        addObject(longerWall63,661,450);
+        longerWall63.setLocation(664,450);
+        longerWall63.setLocation(667,438);
+        LongerWall longerWall64 = new LongerWall();
+        addObject(longerWall64,674,358);
+        LongerWall longerWall65 = new LongerWall();
+        addObject(longerWall65,677,293);
+        LongerWall longerWall66 = new LongerWall();
+        addObject(longerWall66,685,247);
+        LongerWall longerWall67 = new LongerWall();
+        addObject(longerWall67,687,238);
+        LongerWall longerWall68 = new LongerWall();
+        addObject(longerWall68,674,329);
+        longerWall64.setLocation(674,356);
+        LongerWall longerWall69 = new LongerWall();
+        addObject(longerWall69,674,356);
+        LongerWall longerWall70 = new LongerWall();
+        addObject(longerWall70,674,385);
+        LongerWall longerWall71 = new LongerWall();
+        addObject(longerWall71,656,445);
+        longerWall71.setLocation(632,459);
+        LongerWall longerWall72 = new LongerWall();
+        addObject(longerWall72,632,459);
+        LongerWall longerWall73 = new LongerWall();
+        addObject(longerWall73,605,463);
+        LongerWall longerWall74 = new LongerWall();
+        addObject(longerWall74,583,436);
+        LongerWall longerWall75 = new LongerWall();
+        addObject(longerWall75,586,396);
+        LongerWall longerWall76 = new LongerWall();
+        addObject(longerWall76,601,316);
+        LongerWall longerWall77 = new LongerWall();
+        addObject(longerWall77,599,260);
+        LongerWall longerWall78 = new LongerWall();
+        addObject(longerWall78,592,238);
+        LongerWall longerWall79 = new LongerWall();
+        addObject(longerWall79,587,227);
+        LongerWall longerWall80 = new LongerWall();
+        addObject(longerWall80,585,247);
+        longerWall3.setLocation(120,113);
+        longerWall2.setLocation(160,114);
+        longerWall.setLocation(173,109);
+        longerWall4.setLocation(211,116);
+        longerWall6.setLocation(241,117);
+        longerWall5.setLocation(305,112);
+        longerWall6.setLocation(284,109);
+        longerWall7.setLocation(337,114);
+        longerWall8.setLocation(419,108);
+        longerWall8.setLocation(441,108);
+        longerWall10.setLocation(476,157);
+        longerWall11.setLocation(499,157);
+        longerWall12.setLocation(639,111);
+        ShortWall shortWall3 = new ShortWall();
+        addObject(shortWall3,371,134);
+        shortWall3.setLocation(368,134);
+        shortWall3.setLocation(721,159);
+        removeObject(shortWall3);
+        TallWall tallWall17 = new TallWall();
+        addObject(tallWall17,352,162);
+        tallWall17.setLocation(457,90);
+        TallWall tallWall18 = new TallWall();
+        addObject(tallWall18,437,162);
+        tallWall18.setLocation(463,135);
+        TallWall tallWall19 = new TallWall();
+        addObject(tallWall19,52,214);
+        tallWall19.setLocation(53,214);
+        tallWall19.setLocation(668,219);
+        longerWall79.setLocation(52,213);
+        longerWall14.setLocation(67,211);
+        longerWall15.setLocation(106,210);
+        longerWall16.setLocation(135,214);
+        longerWall16.setLocation(160,211);
+        tallWall19.setLocation(152,195);
+        longerWall16.setLocation(255,172);
+        TallWall tallWall20 = new TallWall();
+        addObject(tallWall20,310,171);
+        tallWall20.setLocation(277,150);
+        longerWall16.setLocation(269,175);
+        TallWall tallWall21 = new TallWall();
+        addObject(tallWall21,214,173);
+        TallWall tallWall22 = new TallWall();
+        addObject(tallWall22,217,248);
+        tallWall21.setLocation(197,160);
+        tallWall22.setLocation(150,269);
+        longerWall18.setLocation(169,227);
+        longerWall22.setLocation(351,295);
+        longerWall19.setLocation(173,224);
+        longerWall20.setLocation(210,231);
+        longerWall23.setLocation(246,230);
+        longerWall25.setLocation(273,230);
+        longerWall21.setLocation(293,225);
+        TallWall tallWall23 = new TallWall();
+        addObject(tallWall23,400,234);
+        TallWall tallWall24 = new TallWall();
+        addObject(tallWall24,444,247);
+        TallWall tallWall25 = new TallWall();
+        addObject(tallWall25,515,252);
+        TallWall tallWall26 = new TallWall();
+        addObject(tallWall26,546,193);
+        TallWall tallWall27 = new TallWall();
+        addObject(tallWall27,602,154);
+        TallWall tallWall28 = new TallWall();
+        addObject(tallWall28,622,197);
+        TallWall tallWall29 = new TallWall();
+        addObject(tallWall29,651,220);
+        TallWall tallWall30 = new TallWall();
+        addObject(tallWall30,652,260);
+        TallWall tallWall31 = new TallWall();
+        addObject(tallWall31,659,327);
+        tallWall23.setLocation(305,196);
+        tallWall24.setLocation(347,144);
+        tallWall26.setLocation(350,239);
+        tallWall25.setLocation(352,261);
+        longerWall22.setLocation(335,279);
+        longerWall44.setLocation(307,285);
+        longerWall38.setLocation(273,284);
+        longerWall50.setLocation(251,287);
+        tallWall23.setLocation(312,209);
+        longerWall37.setLocation(300,229);
+        longerWall51.setLocation(216,284);
+        longerWall43.setLocation(207,283);
+        tallWall27.setLocation(197,349);
+        longerWall53.setLocation(180,348);
+        longerWall51.setLocation(157,356);
+        longerWall54.setLocation(117,355);
+        longerWall36.setLocation(91,348);
+        tallWall30.setLocation(97,322);
+        longerWall67.setLocation(46,275);
+        longerWall36.setLocation(97,353);
+        longerWall77.setLocation(77,356);
+        tallWall31.setLocation(68,367);
+        longerWall33.setLocation(73,404);
+        longerWall56.setLocation(110,403);
+        longerWall33.setLocation(79,402);
+        tallWall31.setLocation(66,387);
+        longerWall42.setLocation(128,409);
+        longerWall41.setLocation(153,405);
+        tallWall29.setLocation(405,156);
+        longerWall78.setLocation(367,224);
+        longerWall26.setLocation(389,233);
+        longerWall24.setLocation(409,233);
+        longerWall29.setLocation(432,224);
+        longerWall24.setLocation(414,220);
+        longerWall26.setLocation(405,226);
+        longerWall28.setLocation(479,221);
+        longerWall78.setLocation(507,221);
+        longerWall61.setLocation(526,221);
+        tallWall28.setLocation(564,206);
+        longerWall60.setLocation(548,222);
+        TallWall tallWall32 = new TallWall();
+        addObject(tallWall32,617,221);
+        TallWall tallWall33 = new TallWall();
+        addObject(tallWall33,666,251);
+        TallWall tallWall34 = new TallWall();
+        addObject(tallWall34,648,290);
+        tallWall34.setLocation(648,310);
+        tallWall34.setLocation(647,348);
+        TallWall tallWall35 = new TallWall();
+        addObject(tallWall35,647,348);
+        tallWall35.setLocation(643,375);
+        TallWall tallWall36 = new TallWall();
+        addObject(tallWall36,643,375);
+        TallWall tallWall37 = new TallWall();
+        addObject(tallWall37,617,419);
+        TallWall tallWall38 = new TallWall();
+        addObject(tallWall38,611,409);
+        TallWall tallWall39 = new TallWall();
+        addObject(tallWall39,598,352);
+        tallWall37.setLocation(517,113);
+        tallWall32.setLocation(567,131);
+        longerWall12.setLocation(570,90);
+        longerWall13.setLocation(611,92);
+        longerWall68.setLocation(580,221);
+        tallWall33.setLocation(621,124);
+        tallWall34.setLocation(673,108);
+        tallWall35.setLocation(673,128);
+        tallWall33.setLocation(641,140);
+        tallWall35.setLocation(692,141);
+        tallWall33.setLocation(639,141);
+        longerWall66.setLocation(628,85);
+        longerWall64.setLocation(713,96);
+        longerWall65.setLocation(737,148);
+        longerWall65.setLocation(729,96);
+        longerWall66.setLocation(632,89);
+        longerWall70.setLocation(643,220);
+        longerWall75.setLocation(672,226);
+        longerWall32.setLocation(712,220);
+        longerWall31.setLocation(733,225);
+        tallWall34.setLocation(592,256);
+        tallWall39.setLocation(568,395);
+        longerWall76.setLocation(582,159);
+        longerWall74.setLocation(608,287);
+        longerWall30.setLocation(636,287);
+        longerWall62.setLocation(662,292);
+        longerWall64.setLocation(695,287);
+        longerWall64.setLocation(698,287);
+        longerWall58.setLocation(576,460);
+        tallWall36.setLocation(703,335);
+        longerWall63.setLocation(741,418);
+        longerWall71.setLocation(723,421);
+        tallWall38.setLocation(665,404);
+        tallWall39.setLocation(660,332);
+        longerWall59.setLocation(686,422);
+        longerWall41.setLocation(164,402);
+        LongerWall longerWall81 = new LongerWall();
+        addObject(longerWall81,253,469);
+        LongerWall longerWall82 = new LongerWall();
+        addObject(longerWall82,317,480);
+        LongerWall longerWall83 = new LongerWall();
+        addObject(longerWall83,320,514);
+        longerWall83.setLocation(373,479);
+        LongerWall longerWall84 = new LongerWall();
+        addObject(longerWall84,373,479);
+        longerWall84.setLocation(397,469);
+        LongerWall longerWall85 = new LongerWall();
+        addObject(longerWall85,397,469);
+        LongerWall longerWall86 = new LongerWall();
+        addObject(longerWall86,435,501);
+        longerWall86.setLocation(439,506);
+        LongerWall longerWall87 = new LongerWall();
+        addObject(longerWall87,439,506);
+        LongerWall longerWall88 = new LongerWall();
+        addObject(longerWall88,508,456);
+        LongerWall longerWall89 = new LongerWall();
+        addObject(longerWall89,512,448);
+        LongerWall longerWall90 = new LongerWall();
+        addObject(longerWall90,530,448);
+        LongerWall longerWall91 = new LongerWall();
+        addObject(longerWall91,528,494);
+        longerWall91.setLocation(555,398);
+        longerWall91.setLocation(557,395);
+        LongerWall longerWall92 = new LongerWall();
+        addObject(longerWall92,557,395);
+        longerWall91.setLocation(562,413);
+        LongerWall longerWall93 = new LongerWall();
+        addObject(longerWall93,567,436);
+        LongerWall longerWall94 = new LongerWall();
+        addObject(longerWall94,604,350);
+        longerWall94.setLocation(607,345);
+        LongerWall longerWall95 = new LongerWall();
+        addObject(longerWall95,607,345);
+        longerWall94.setLocation(607,352);
+        LongerWall longerWall96 = new LongerWall();
+        addObject(longerWall96,610,405);
+        longerWall96.setLocation(609,409);
+        LongerWall longerWall97 = new LongerWall();
+        addObject(longerWall97,609,409);
+        longerWall96.setLocation(609,411);
+        LongerWall longerWall98 = new LongerWall();
+        addObject(longerWall98,570,353);
+        LongerWall longerWall99 = new LongerWall();
+        addObject(longerWall99,536,320);
+        LongerWall longerWall100 = new LongerWall();
+        addObject(longerWall100,433,261);
+        LongerWall longerWall101 = new LongerWall();
+        addObject(longerWall101,468,311);
+        longerWall101.setLocation(463,332);
+        LongerWall longerWall102 = new LongerWall();
+        addObject(longerWall102,463,332);
+        LongerWall longerWall103 = new LongerWall();
+        addObject(longerWall103,461,368);
+        LongerWall longerWall104 = new LongerWall();
+        addObject(longerWall104,461,381);
+        LongerWall longerWall105 = new LongerWall();
+        addObject(longerWall105,464,406);
+        longerWall39.setLocation(476,440);
+        LongerWall longerWall106 = new LongerWall();
+        addObject(longerWall106,476,440);
+        LongerWall longerWall107 = new LongerWall();
+        addObject(longerWall107,500,486);
+        LongerWall longerWall108 = new LongerWall();
+        addObject(longerWall108,501,495);
+        longerWall108.setLocation(502,499);
+        longerWall49.setLocation(185,407);
+        longerWall35.setLocation(207,400);
+        longerWall81.setLocation(41,459);
+        longerWall48.setLocation(287,402);
+        longerWall45.setLocation(237,349);
+        longerWall34.setLocation(266,352);
+        longerWall55.setLocation(291,347);
+        longerWall57.setLocation(324,352);
+        longerWall104.setLocation(363,358);
+        longerWall104.setLocation(350,358);
+        longerWall101.setLocation(365,280);
+        longerWall100.setLocation(389,283);
+        longerWall101.setLocation(468,285);
+        longerWall99.setLocation(495,282);
+        longerWall82.setLocation(74,463);
+        longerWall46.setLocation(142,460);
+        longerWall46.setLocation(167,464);
+        longerWall83.setLocation(161,463);
+        longerWall46.setLocation(208,464);
+        longerWall84.setLocation(230,464);
+        longerWall86.setLocation(55,525);
+        longerWall86.setLocation(131,523);
+        longerWall87.setLocation(104,523);
+        longerWall86.setLocation(127,527);
+        TallWall tallWall40 = new TallWall();
+        addObject(tallWall40,392,421);
+        TallWall tallWall41 = new TallWall();
+        addObject(tallWall41,403,387);
+        TallWall tallWall42 = new TallWall();
+        addObject(tallWall42,431,353);
+        tallWall42.setLocation(435,352);
+        TallWall tallWall43 = new TallWall();
+        addObject(tallWall43,470,341);
+        TallWall tallWall44 = new TallWall();
+        addObject(tallWall44,513,328);
+        TallWall tallWall45 = new TallWall();
+        addObject(tallWall45,524,326);
+        TallWall tallWall46 = new TallWall();
+        addObject(tallWall46,546,326);
+        TallWall tallWall47 = new TallWall();
+        addObject(tallWall47,587,367);
+        TallWall tallWall48 = new TallWall();
+        addObject(tallWall48,590,411);
+        longerWall58.setLocation(586,468);
+        TallWall tallWall49 = new TallWall();
+        addObject(tallWall49,586,468);
+        TallWall tallWall50 = new TallWall();
+        addObject(tallWall50,518,496);
+        TallWall tallWall51 = new TallWall();
+        addObject(tallWall51,477,497);
+        TallWall tallWall52 = new TallWall();
+        addObject(tallWall52,458,498);
+        TallWall tallWall53 = new TallWall();
+        addObject(tallWall53,407,477);
+        tallWall53.setLocation(90,486);
+        tallWall52.setLocation(198,508);
+        tallWall51.setLocation(285,450);
+        longerWall84.setLocation(258,470);
+        longerWall107.setLocation(268,464);
+        tallWall41.setLocation(459,311);
+        longerWall103.setLocation(367,352);
+        longerWall104.setLocation(358,355);
+        longerWall57.setLocation(398,350);
+        longerWall40.setLocation(429,355);
+        longerWall39.setLocation(450,352);
+        tallWall44.setLocation(509,329);
+        tallWall45.setLocation(451,495);
+        tallWall43.setLocation(467,456);
+        tallWall42.setLocation(428,469);
+        longerWall40.setLocation(416,351);
+        longerWall40.setLocation(422,349);
+        longerWall103.setLocation(379,349);
+        longerWall104.setLocation(351,346);
+        longerWall104.setLocation(333,349);
+        longerWall55.setLocation(299,345);
+        longerWall34.setLocation(273,349);
+        longerWall45.setLocation(243,349);
+        tallWall46.setLocation(541,568);
+        tallWall46.setLocation(544,480);
+        tallWall49.setLocation(543,472);
+        tallWall48.setLocation(597,514);
+        tallWall45.setLocation(238,550);
+        tallWall42.setLocation(281,515);
+        tallWall40.setLocation(345,577);
+        tallWall50.setLocation(401,521);
+        longerWall108.setLocation(293,470);
+        longerWall88.setLocation(324,470);
+        longerWall89.setLocation(343,464);
+        longerWall90.setLocation(373,467);
+        longerWall89.setLocation(355,466);
+        longerWall88.setLocation(328,467);
+        longerWall108.setLocation(297,465);
+        longerWall90.setLocation(384,467);
+        tallWall50.setLocation(395,480);
+        longerWall39.setLocation(509,461);
+        longerWall91.setLocation(508,435);
+        tallWall47.setLocation(588,401);
+        longerWall94.setLocation(422,464);
+        longerWall39.setLocation(434,464);
+        tallWall43.setLocation(463,578);
+        tallWall49.setLocation(522,514);
+        longerWall91.setLocation(473,469);
+        longerWall92.setLocation(488,464);
+        tallWall46.setLocation(573,571);
+        longerWall58.setLocation(540,472);
+        longerWall93.setLocation(517,465);
+        longerWall92.setLocation(491,470);
+        longerWall93.setLocation(629,425);
+        tallWall49.setLocation(514,471);
+        longerWall58.setLocation(533,467);
+        longerWall58.setLocation(586,411);
+        tallWall48.setLocation(574,466);
+        longerWall58.setLocation(559,400);
+        tallWall47.setLocation(587,375);
+        longerWall58.setLocation(573,396);
+        longerWall96.setLocation(603,391);
+        longerWall96.setLocation(591,443);
+        longerWall96.setLocation(668,506);
+        TallWall tallWall54 = new TallWall();
+        addObject(tallWall54,664,498);
+        TallWall tallWall55 = new TallWall();
+        addObject(tallWall55,718,496);
+        longerWall73.setLocation(462,412);
+        longerWall72.setLocation(490,389);
+        longerWall93.setLocation(533,420);
+        longerWall96.setLocation(613,440);
+        longerWall96.setLocation(591,464);
+        longerWall93.setLocation(546,387);
+        longerWall96.setLocation(596,513);
+        tallWall55.setLocation(614,517);
+        longerWall96.setLocation(594,533);
+        longerWall93.setLocation(539,388);
+        longerWall72.setLocation(504,397);
+        longerWall73.setLocation(477,393);
+        TallWall tallWall56 = new TallWall();
+        addObject(tallWall56,477,442);
+        TallWall tallWall57 = new TallWall();
+        addObject(tallWall57,368,404);
+        TallWall tallWall58 = new TallWall();
+        addObject(tallWall58,406,407);
+        TallWall tallWall59 = new TallWall();
+        addObject(tallWall59,437,414);
+        tallWall57.setLocation(348,446);
+        tallWall58.setLocation(382,386);
+        tallWall59.setLocation(424,454);
+    }
+}
+
+//
+//
+
+//WALLS
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class WALLS here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class WALLS extends Actor
+{
+    public WALLS()
+    {
+        
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//LongWall
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongWall extends WALLS
+{
+    public LongWall() 
+    {
+        getImage().scale(getImage().getWidth() * 3,getImage().getHeight());
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//LongerWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongerWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongerWall extends WALLS
+{
+    public void LongerWall()
+    {
+        getImage().scale(getImage().getWidth() * 5,getImage().getHeight());
+    }
+    public void act()
+    {
+        
+    }
+}
+
+//
+//
+
+//LongestWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongestWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongestWall extends WALLS
+{
+    public LongestWall()
+    {
+        getImage().scale(getImage().getWidth() * 12,getImage().getHeight());
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//TallWall
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+
+public class TallWall extends WALLS
+{
+    public TallWall(){
+        getImage().scale(getImage().getWidth() / 3,getImage().getHeight() * 5);
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+// ShortWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+
+
+public class ShortWall extends WALLS
+{
+    /**
+     * Act - do whatever the ShortWall wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public ShortWall(){
+        getImage().scale(getImage().getWidth() / 3,getImage().getHeight() * 2);
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Greenfoot Tutorial 5 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//MyWorld
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MyWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MyWorld extends World
+{
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    public MyWorld()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(800, 600, 1); 
+        prepare();
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+
+        TallWall tallWall = new TallWall();
+        addObject(tallWall,32,551);
+        TallWall tallWall2 = new TallWall();
+        addObject(tallWall2,32,477);
+        TallWall tallWall3 = new TallWall();
+        addObject(tallWall3,34,400);
+        TallWall tallWall4 = new TallWall();
+        addObject(tallWall4,34,326);
+        TallWall tallWall5 = new TallWall();
+        addObject(tallWall5,34,257);
+        TallWall tallWall6 = new TallWall();
+        addObject(tallWall6,32,173);
+        TallWall tallWall7 = new TallWall();
+        addObject(tallWall7,33,84);
+        TallWall tallWall8 = new TallWall();
+        addObject(tallWall8,31,126);
+        tallWall6.setLocation(35,215);
+        tallWall6.setLocation(34,148);
+        tallWall7.setLocation(32,41);
+        TallWall tallWall9 = new TallWall();
+        addObject(tallWall9,752,524);
+        TallWall tallWall10 = new TallWall();
+        addObject(tallWall10,750,444);
+        TallWall tallWall11 = new TallWall();
+        addObject(tallWall11,750,355);
+        TallWall tallWall12 = new TallWall();
+        addObject(tallWall12,748,281);
+        TallWall tallWall13 = new TallWall();
+        addObject(tallWall13,751,206);
+        TallWall tallWall14 = new TallWall();
+        addObject(tallWall14,748,127);
+        TallWall tallWall15 = new TallWall();
+        addObject(tallWall15,748,76);
+        TallWall tallWall16 = new TallWall();
+        addObject(tallWall16,753,394);
+        tallWall9.setLocation(751,531);
+        tallWall10.setLocation(755,492);
+        tallWall11.setLocation(752,309);
+        tallWall12.setLocation(749,263);
+        tallWall13.setLocation(751,206);
+        tallWall14.setLocation(752,154);
+        tallWall15.setLocation(750,73);
+        LongestWall longestWall = new LongestWall();
+        addObject(longestWall,152,37);
+        LongestWall longestWall2 = new LongestWall();
+        addObject(longestWall2,484,37);
+        longestWall2.setLocation(562,28);
+        longestWall.setLocation(380,26);
+        LongestWall longestWall3 = new LongestWall();
+        addObject(longestWall3,257,576);
+        LongestWall longestWall4 = new LongestWall();
+        addObject(longestWall4,510,579);
+        longestWall3.setLocation(220,579);
+        longestWall4.setLocation(430,585);
+        Mouse mouse = new Mouse();
+        addObject(mouse,110,78);
+        ShortWall shortWall = new ShortWall();
+        addObject(shortWall,106,129);
+        ShortWall shortWall2 = new ShortWall();
+        addObject(shortWall2,107,159);
+        LongerWall longerWall = new LongerWall();
+        addObject(longerWall,171,120);
+        LongerWall longerWall2 = new LongerWall();
+        addObject(longerWall2,144,122);
+        LongerWall longerWall3 = new LongerWall();
+        addObject(longerWall3,123,121);
+        longerWall.setLocation(164,122);
+        LongestWall longestWall5 = new LongestWall();
+        addObject(longestWall5,164,122);
+        longestWall5.setLocation(1191,131);
+        removeObject(longestWall5);
+        longerWall.setLocation(195,119);
+        longerWall2.setLocation(164,117);
+        longerWall3.setLocation(131,112);
+        longerWall2.setLocation(163,111);
+        longerWall.setLocation(195,120);
+        LongerWall longerWall4 = new LongerWall();
+        addObject(longerWall4,231,122);
+        LongerWall longerWall5 = new LongerWall();
+        addObject(longerWall5,274,123);
+        LongerWall longerWall6 = new LongerWall();
+        addObject(longerWall6,321,124);
+        LongerWall longerWall7 = new LongerWall();
+        addObject(longerWall7,367,125);
+        LongerWall longerWall8 = new LongerWall();
+        addObject(longerWall8,438,128);
+        longerWall8.setLocation(423,126);
+        LongerWall longerWall9 = new LongerWall();
+        addObject(longerWall9,423,126);
+        LongerWall longerWall10 = new LongerWall();
+        addObject(longerWall10,511,131);
+        LongerWall longerWall11 = new LongerWall();
+        addObject(longerWall11,535,127);
+        LongerWall longerWall12 = new LongerWall();
+        addObject(longerWall12,593,137);
+        longerWall12.setLocation(597,134);
+        longestWall2.setLocation(749,90);
+        LongerWall longerWall13 = new LongerWall();
+        addObject(longerWall13,749,90);
+        longestWall2.setLocation(648,33);
+        longerWall13.setLocation(651,154);
+        LongerWall longerWall14 = new LongerWall();
+        addObject(longerWall14,118,223);
+        longerWall14.setLocation(129,234);
+        LongerWall longerWall15 = new LongerWall();
+        addObject(longerWall15,129,234);
+        LongerWall longerWall16 = new LongerWall();
+        addObject(longerWall16,199,269);
+        longerWall16.setLocation(205,271);
+        LongerWall longerWall17 = new LongerWall();
+        addObject(longerWall17,205,271);
+        LongerWall longerWall18 = new LongerWall();
+        addObject(longerWall18,257,240);
+        LongerWall longerWall19 = new LongerWall();
+        addObject(longerWall19,328,220);
+        LongerWall longerWall20 = new LongerWall();
+        addObject(longerWall20,337,248);
+        LongerWall longerWall21 = new LongerWall();
+        addObject(longerWall21,350,296);
+        longerWall21.setLocation(350,296);
+        longerWall21.setLocation(368,278);
+        LongerWall longerWall22 = new LongerWall();
+        addObject(longerWall22,368,278);
+        LongerWall longerWall23 = new LongerWall();
+        addObject(longerWall23,405,237);
+        LongerWall longerWall24 = new LongerWall();
+        addObject(longerWall24,473,214);
+        LongerWall longerWall25 = new LongerWall();
+        addObject(longerWall25,478,255);
+        LongerWall longerWall26 = new LongerWall();
+        addObject(longerWall26,488,287);
+        LongerWall longerWall27 = new LongerWall();
+        addObject(longerWall27,517,354);
+        longerWall27.setLocation(517,354);
+        LongerWall longerWall28 = new LongerWall();
+        addObject(longerWall28,519,313);
+        LongerWall longerWall29 = new LongerWall();
+        addObject(longerWall29,546,260);
+        longerWall29.setLocation(547,260);
+        LongerWall longerWall30 = new LongerWall();
+        addObject(longerWall30,574,322);
+        LongerWall longerWall31 = new LongerWall();
+        addObject(longerWall31,577,349);
+        LongerWall longerWall32 = new LongerWall();
+        addObject(longerWall32,578,382);
+        LongerWall longerWall33 = new LongerWall();
+        addObject(longerWall33,527,427);
+        LongerWall longerWall34 = new LongerWall();
+        addObject(longerWall34,392,419);
+        LongerWall longerWall35 = new LongerWall();
+        addObject(longerWall35,361,397);
+        LongerWall longerWall36 = new LongerWall();
+        addObject(longerWall36,353,367);
+        LongerWall longerWall37 = new LongerWall();
+        addObject(longerWall37,422,308);
+        LongerWall longerWall38 = new LongerWall();
+        addObject(longerWall38,446,364);
+        LongerWall longerWall39 = new LongerWall();
+        addObject(longerWall39,480,418);
+        LongerWall longerWall40 = new LongerWall();
+        addObject(longerWall40,449,438);
+        LongerWall longerWall41 = new LongerWall();
+        addObject(longerWall41,181,456);
+        LongerWall longerWall42 = new LongerWall();
+        addObject(longerWall42,177,416);
+        LongerWall longerWall43 = new LongerWall();
+        addObject(longerWall43,200,351);
+        LongerWall longerWall44 = new LongerWall();
+        addObject(longerWall44,265,296);
+        LongerWall longerWall45 = new LongerWall();
+        addObject(longerWall45,374,404);
+        LongerWall longerWall46 = new LongerWall();
+        addObject(longerWall46,361,466);
+        longerWall46.setLocation(361,466);
+        LongerWall longerWall47 = new LongerWall();
+        addObject(longerWall47,361,466);
+        LongerWall longerWall48 = new LongerWall();
+        addObject(longerWall48,329,420);
+        LongerWall longerWall49 = new LongerWall();
+        addObject(longerWall49,311,392);
+        LongerWall longerWall50 = new LongerWall();
+        addObject(longerWall50,291,362);
+        LongerWall longerWall51 = new LongerWall();
+        addObject(longerWall51,283,345);
+        longerWall51.setLocation(366,327);
+        LongerWall longerWall52 = new LongerWall();
+        addObject(longerWall52,366,327);
+        LongerWall longerWall53 = new LongerWall();
+        addObject(longerWall53,418,335);
+        LongerWall longerWall54 = new LongerWall();
+        addObject(longerWall54,406,374);
+        LongerWall longerWall55 = new LongerWall();
+        addObject(longerWall55,406,412);
+        LongerWall longerWall56 = new LongerWall();
+        addObject(longerWall56,410,420);
+        LongerWall longerWall57 = new LongerWall();
+        addObject(longerWall57,463,409);
+        LongerWall longerWall58 = new LongerWall();
+        addObject(longerWall58,526,373);
+        LongerWall longerWall59 = new LongerWall();
+        addObject(longerWall59,553,352);
+        LongerWall longerWall60 = new LongerWall();
+        addObject(longerWall60,630,313);
+        LongerWall longerWall61 = new LongerWall();
+        addObject(longerWall61,627,280);
+        LongerWall longerWall62 = new LongerWall();
+        addObject(longerWall62,634,360);
+        LongerWall longerWall63 = new LongerWall();
+        addObject(longerWall63,661,450);
+        longerWall63.setLocation(664,450);
+        longerWall63.setLocation(667,438);
+        LongerWall longerWall64 = new LongerWall();
+        addObject(longerWall64,674,358);
+        LongerWall longerWall65 = new LongerWall();
+        addObject(longerWall65,677,293);
+        LongerWall longerWall66 = new LongerWall();
+        addObject(longerWall66,685,247);
+        LongerWall longerWall67 = new LongerWall();
+        addObject(longerWall67,687,238);
+        LongerWall longerWall68 = new LongerWall();
+        addObject(longerWall68,674,329);
+        longerWall64.setLocation(674,356);
+        LongerWall longerWall69 = new LongerWall();
+        addObject(longerWall69,674,356);
+        LongerWall longerWall70 = new LongerWall();
+        addObject(longerWall70,674,385);
+        LongerWall longerWall71 = new LongerWall();
+        addObject(longerWall71,656,445);
+        longerWall71.setLocation(632,459);
+        LongerWall longerWall72 = new LongerWall();
+        addObject(longerWall72,632,459);
+        LongerWall longerWall73 = new LongerWall();
+        addObject(longerWall73,605,463);
+        LongerWall longerWall74 = new LongerWall();
+        addObject(longerWall74,583,436);
+        LongerWall longerWall75 = new LongerWall();
+        addObject(longerWall75,586,396);
+        LongerWall longerWall76 = new LongerWall();
+        addObject(longerWall76,601,316);
+        LongerWall longerWall77 = new LongerWall();
+        addObject(longerWall77,599,260);
+        LongerWall longerWall78 = new LongerWall();
+        addObject(longerWall78,592,238);
+        LongerWall longerWall79 = new LongerWall();
+        addObject(longerWall79,587,227);
+        LongerWall longerWall80 = new LongerWall();
+        addObject(longerWall80,585,247);
+        longerWall3.setLocation(120,113);
+        longerWall2.setLocation(160,114);
+        longerWall.setLocation(173,109);
+        longerWall4.setLocation(211,116);
+        longerWall6.setLocation(241,117);
+        longerWall5.setLocation(305,112);
+        longerWall6.setLocation(284,109);
+        longerWall7.setLocation(337,114);
+        longerWall8.setLocation(419,108);
+        longerWall8.setLocation(441,108);
+        longerWall10.setLocation(476,157);
+        longerWall11.setLocation(499,157);
+        longerWall12.setLocation(639,111);
+        ShortWall shortWall3 = new ShortWall();
+        addObject(shortWall3,371,134);
+        shortWall3.setLocation(368,134);
+        shortWall3.setLocation(721,159);
+        removeObject(shortWall3);
+        TallWall tallWall17 = new TallWall();
+        addObject(tallWall17,352,162);
+        tallWall17.setLocation(457,90);
+        TallWall tallWall18 = new TallWall();
+        addObject(tallWall18,437,162);
+        tallWall18.setLocation(463,135);
+        TallWall tallWall19 = new TallWall();
+        addObject(tallWall19,52,214);
+        tallWall19.setLocation(53,214);
+        tallWall19.setLocation(668,219);
+        longerWall79.setLocation(52,213);
+        longerWall14.setLocation(67,211);
+        longerWall15.setLocation(106,210);
+        longerWall16.setLocation(135,214);
+        longerWall16.setLocation(160,211);
+        tallWall19.setLocation(152,195);
+        longerWall16.setLocation(255,172);
+        TallWall tallWall20 = new TallWall();
+        addObject(tallWall20,310,171);
+        tallWall20.setLocation(277,150);
+        longerWall16.setLocation(269,175);
+        TallWall tallWall21 = new TallWall();
+        addObject(tallWall21,214,173);
+        TallWall tallWall22 = new TallWall();
+        addObject(tallWall22,217,248);
+        tallWall21.setLocation(197,160);
+        tallWall22.setLocation(150,269);
+        longerWall18.setLocation(169,227);
+        longerWall22.setLocation(351,295);
+        longerWall19.setLocation(173,224);
+        longerWall20.setLocation(210,231);
+        longerWall23.setLocation(246,230);
+        longerWall25.setLocation(273,230);
+        longerWall21.setLocation(293,225);
+        TallWall tallWall23 = new TallWall();
+        addObject(tallWall23,400,234);
+        TallWall tallWall24 = new TallWall();
+        addObject(tallWall24,444,247);
+        TallWall tallWall25 = new TallWall();
+        addObject(tallWall25,515,252);
+        TallWall tallWall26 = new TallWall();
+        addObject(tallWall26,546,193);
+        TallWall tallWall27 = new TallWall();
+        addObject(tallWall27,602,154);
+        TallWall tallWall28 = new TallWall();
+        addObject(tallWall28,622,197);
+        TallWall tallWall29 = new TallWall();
+        addObject(tallWall29,651,220);
+        TallWall tallWall30 = new TallWall();
+        addObject(tallWall30,652,260);
+        TallWall tallWall31 = new TallWall();
+        addObject(tallWall31,659,327);
+        tallWall23.setLocation(305,196);
+        tallWall24.setLocation(347,144);
+        tallWall26.setLocation(350,239);
+        tallWall25.setLocation(352,261);
+        longerWall22.setLocation(335,279);
+        longerWall44.setLocation(307,285);
+        longerWall38.setLocation(273,284);
+        longerWall50.setLocation(251,287);
+        tallWall23.setLocation(312,209);
+        longerWall37.setLocation(300,229);
+        longerWall51.setLocation(216,284);
+        longerWall43.setLocation(207,283);
+        tallWall27.setLocation(197,349);
+        longerWall53.setLocation(180,348);
+        longerWall51.setLocation(157,356);
+        longerWall54.setLocation(117,355);
+        longerWall36.setLocation(91,348);
+        tallWall30.setLocation(97,322);
+        longerWall67.setLocation(46,275);
+        longerWall36.setLocation(97,353);
+        longerWall77.setLocation(77,356);
+        tallWall31.setLocation(68,367);
+        longerWall33.setLocation(73,404);
+        longerWall56.setLocation(110,403);
+        longerWall33.setLocation(79,402);
+        tallWall31.setLocation(66,387);
+        longerWall42.setLocation(128,409);
+        longerWall41.setLocation(153,405);
+        tallWall29.setLocation(405,156);
+        longerWall78.setLocation(367,224);
+        longerWall26.setLocation(389,233);
+        longerWall24.setLocation(409,233);
+        longerWall29.setLocation(432,224);
+        longerWall24.setLocation(414,220);
+        longerWall26.setLocation(405,226);
+        longerWall28.setLocation(479,221);
+        longerWall78.setLocation(507,221);
+        longerWall61.setLocation(526,221);
+        tallWall28.setLocation(564,206);
+        longerWall60.setLocation(548,222);
+        TallWall tallWall32 = new TallWall();
+        addObject(tallWall32,617,221);
+        TallWall tallWall33 = new TallWall();
+        addObject(tallWall33,666,251);
+        TallWall tallWall34 = new TallWall();
+        addObject(tallWall34,648,290);
+        tallWall34.setLocation(648,310);
+        tallWall34.setLocation(647,348);
+        TallWall tallWall35 = new TallWall();
+        addObject(tallWall35,647,348);
+        tallWall35.setLocation(643,375);
+        TallWall tallWall36 = new TallWall();
+        addObject(tallWall36,643,375);
+        TallWall tallWall37 = new TallWall();
+        addObject(tallWall37,617,419);
+        TallWall tallWall38 = new TallWall();
+        addObject(tallWall38,611,409);
+        TallWall tallWall39 = new TallWall();
+        addObject(tallWall39,598,352);
+        tallWall37.setLocation(517,113);
+        tallWall32.setLocation(567,131);
+        longerWall12.setLocation(570,90);
+        longerWall13.setLocation(611,92);
+        longerWall68.setLocation(580,221);
+        tallWall33.setLocation(621,124);
+        tallWall34.setLocation(673,108);
+        tallWall35.setLocation(673,128);
+        tallWall33.setLocation(641,140);
+        tallWall35.setLocation(692,141);
+        tallWall33.setLocation(639,141);
+        longerWall66.setLocation(628,85);
+        longerWall64.setLocation(713,96);
+        longerWall65.setLocation(737,148);
+        longerWall65.setLocation(729,96);
+        longerWall66.setLocation(632,89);
+        longerWall70.setLocation(643,220);
+        longerWall75.setLocation(672,226);
+        longerWall32.setLocation(712,220);
+        longerWall31.setLocation(733,225);
+        tallWall34.setLocation(592,256);
+        tallWall39.setLocation(568,395);
+        longerWall76.setLocation(582,159);
+        longerWall74.setLocation(608,287);
+        longerWall30.setLocation(636,287);
+        longerWall62.setLocation(662,292);
+        longerWall64.setLocation(695,287);
+        longerWall64.setLocation(698,287);
+        longerWall58.setLocation(576,460);
+        tallWall36.setLocation(703,335);
+        longerWall63.setLocation(741,418);
+        longerWall71.setLocation(723,421);
+        tallWall38.setLocation(665,404);
+        tallWall39.setLocation(660,332);
+        longerWall59.setLocation(686,422);
+        longerWall41.setLocation(164,402);
+        LongerWall longerWall81 = new LongerWall();
+        addObject(longerWall81,253,469);
+        LongerWall longerWall82 = new LongerWall();
+        addObject(longerWall82,317,480);
+        LongerWall longerWall83 = new LongerWall();
+        addObject(longerWall83,320,514);
+        longerWall83.setLocation(373,479);
+        LongerWall longerWall84 = new LongerWall();
+        addObject(longerWall84,373,479);
+        longerWall84.setLocation(397,469);
+        LongerWall longerWall85 = new LongerWall();
+        addObject(longerWall85,397,469);
+        LongerWall longerWall86 = new LongerWall();
+        addObject(longerWall86,435,501);
+        longerWall86.setLocation(439,506);
+        LongerWall longerWall87 = new LongerWall();
+        addObject(longerWall87,439,506);
+        LongerWall longerWall88 = new LongerWall();
+        addObject(longerWall88,508,456);
+        LongerWall longerWall89 = new LongerWall();
+        addObject(longerWall89,512,448);
+        LongerWall longerWall90 = new LongerWall();
+        addObject(longerWall90,530,448);
+        LongerWall longerWall91 = new LongerWall();
+        addObject(longerWall91,528,494);
+        longerWall91.setLocation(555,398);
+        longerWall91.setLocation(557,395);
+        LongerWall longerWall92 = new LongerWall();
+        addObject(longerWall92,557,395);
+        longerWall91.setLocation(562,413);
+        LongerWall longerWall93 = new LongerWall();
+        addObject(longerWall93,567,436);
+        LongerWall longerWall94 = new LongerWall();
+        addObject(longerWall94,604,350);
+        longerWall94.setLocation(607,345);
+        LongerWall longerWall95 = new LongerWall();
+        addObject(longerWall95,607,345);
+        longerWall94.setLocation(607,352);
+        LongerWall longerWall96 = new LongerWall();
+        addObject(longerWall96,610,405);
+        longerWall96.setLocation(609,409);
+        LongerWall longerWall97 = new LongerWall();
+        addObject(longerWall97,609,409);
+        longerWall96.setLocation(609,411);
+        LongerWall longerWall98 = new LongerWall();
+        addObject(longerWall98,570,353);
+        LongerWall longerWall99 = new LongerWall();
+        addObject(longerWall99,536,320);
+        LongerWall longerWall100 = new LongerWall();
+        addObject(longerWall100,433,261);
+        LongerWall longerWall101 = new LongerWall();
+        addObject(longerWall101,468,311);
+        longerWall101.setLocation(463,332);
+        LongerWall longerWall102 = new LongerWall();
+        addObject(longerWall102,463,332);
+        LongerWall longerWall103 = new LongerWall();
+        addObject(longerWall103,461,368);
+        LongerWall longerWall104 = new LongerWall();
+        addObject(longerWall104,461,381);
+        LongerWall longerWall105 = new LongerWall();
+        addObject(longerWall105,464,406);
+        longerWall39.setLocation(476,440);
+        LongerWall longerWall106 = new LongerWall();
+        addObject(longerWall106,476,440);
+        LongerWall longerWall107 = new LongerWall();
+        addObject(longerWall107,500,486);
+        LongerWall longerWall108 = new LongerWall();
+        addObject(longerWall108,501,495);
+        longerWall108.setLocation(502,499);
+        longerWall49.setLocation(185,407);
+        longerWall35.setLocation(207,400);
+        longerWall81.setLocation(41,459);
+        longerWall48.setLocation(287,402);
+        longerWall45.setLocation(237,349);
+        longerWall34.setLocation(266,352);
+        longerWall55.setLocation(291,347);
+        longerWall57.setLocation(324,352);
+        longerWall104.setLocation(363,358);
+        longerWall104.setLocation(350,358);
+        longerWall101.setLocation(365,280);
+        longerWall100.setLocation(389,283);
+        longerWall101.setLocation(468,285);
+        longerWall99.setLocation(495,282);
+        longerWall82.setLocation(74,463);
+        longerWall46.setLocation(142,460);
+        longerWall46.setLocation(167,464);
+        longerWall83.setLocation(161,463);
+        longerWall46.setLocation(208,464);
+        longerWall84.setLocation(230,464);
+        longerWall86.setLocation(55,525);
+        longerWall86.setLocation(131,523);
+        longerWall87.setLocation(104,523);
+        longerWall86.setLocation(127,527);
+        TallWall tallWall40 = new TallWall();
+        addObject(tallWall40,392,421);
+        TallWall tallWall41 = new TallWall();
+        addObject(tallWall41,403,387);
+        TallWall tallWall42 = new TallWall();
+        addObject(tallWall42,431,353);
+        tallWall42.setLocation(435,352);
+        TallWall tallWall43 = new TallWall();
+        addObject(tallWall43,470,341);
+        TallWall tallWall44 = new TallWall();
+        addObject(tallWall44,513,328);
+        TallWall tallWall45 = new TallWall();
+        addObject(tallWall45,524,326);
+        TallWall tallWall46 = new TallWall();
+        addObject(tallWall46,546,326);
+        TallWall tallWall47 = new TallWall();
+        addObject(tallWall47,587,367);
+        TallWall tallWall48 = new TallWall();
+        addObject(tallWall48,590,411);
+        longerWall58.setLocation(586,468);
+        TallWall tallWall49 = new TallWall();
+        addObject(tallWall49,586,468);
+        TallWall tallWall50 = new TallWall();
+        addObject(tallWall50,518,496);
+        TallWall tallWall51 = new TallWall();
+        addObject(tallWall51,477,497);
+        TallWall tallWall52 = new TallWall();
+        addObject(tallWall52,458,498);
+        TallWall tallWall53 = new TallWall();
+        addObject(tallWall53,407,477);
+        tallWall53.setLocation(90,486);
+        tallWall52.setLocation(198,508);
+        tallWall51.setLocation(285,450);
+        longerWall84.setLocation(258,470);
+        longerWall107.setLocation(268,464);
+        tallWall41.setLocation(459,311);
+        longerWall103.setLocation(367,352);
+        longerWall104.setLocation(358,355);
+        longerWall57.setLocation(398,350);
+        longerWall40.setLocation(429,355);
+        longerWall39.setLocation(450,352);
+        tallWall44.setLocation(509,329);
+        tallWall45.setLocation(451,495);
+        tallWall43.setLocation(467,456);
+        tallWall42.setLocation(428,469);
+        longerWall40.setLocation(416,351);
+        longerWall40.setLocation(422,349);
+        longerWall103.setLocation(379,349);
+        longerWall104.setLocation(351,346);
+        longerWall104.setLocation(333,349);
+        longerWall55.setLocation(299,345);
+        longerWall34.setLocation(273,349);
+        longerWall45.setLocation(243,349);
+        tallWall46.setLocation(541,568);
+        tallWall46.setLocation(544,480);
+        tallWall49.setLocation(543,472);
+        tallWall48.setLocation(597,514);
+        tallWall45.setLocation(238,550);
+        tallWall42.setLocation(281,515);
+        tallWall40.setLocation(345,577);
+        tallWall50.setLocation(401,521);
+        longerWall108.setLocation(293,470);
+        longerWall88.setLocation(324,470);
+        longerWall89.setLocation(343,464);
+        longerWall90.setLocation(373,467);
+        longerWall89.setLocation(355,466);
+        longerWall88.setLocation(328,467);
+        longerWall108.setLocation(297,465);
+        longerWall90.setLocation(384,467);
+        tallWall50.setLocation(395,480);
+        longerWall39.setLocation(509,461);
+        longerWall91.setLocation(508,435);
+        tallWall47.setLocation(588,401);
+        longerWall94.setLocation(422,464);
+        longerWall39.setLocation(434,464);
+        tallWall43.setLocation(463,578);
+        tallWall49.setLocation(522,514);
+        longerWall91.setLocation(473,469);
+        longerWall92.setLocation(488,464);
+        tallWall46.setLocation(573,571);
+        longerWall58.setLocation(540,472);
+        longerWall93.setLocation(517,465);
+        longerWall92.setLocation(491,470);
+        longerWall93.setLocation(629,425);
+        tallWall49.setLocation(514,471);
+        longerWall58.setLocation(533,467);
+        longerWall58.setLocation(586,411);
+        tallWall48.setLocation(574,466);
+        longerWall58.setLocation(559,400);
+        tallWall47.setLocation(587,375);
+        longerWall58.setLocation(573,396);
+        longerWall96.setLocation(603,391);
+        longerWall96.setLocation(591,443);
+        longerWall96.setLocation(668,506);
+        TallWall tallWall54 = new TallWall();
+        addObject(tallWall54,664,498);
+        TallWall tallWall55 = new TallWall();
+        addObject(tallWall55,718,496);
+        longerWall73.setLocation(462,412);
+        longerWall72.setLocation(490,389);
+        longerWall93.setLocation(533,420);
+        longerWall96.setLocation(613,440);
+        longerWall96.setLocation(591,464);
+        longerWall93.setLocation(546,387);
+        longerWall96.setLocation(596,513);
+        tallWall55.setLocation(614,517);
+        longerWall96.setLocation(594,533);
+        longerWall93.setLocation(539,388);
+        longerWall72.setLocation(504,397);
+        longerWall73.setLocation(477,393);
+        TallWall tallWall56 = new TallWall();
+        addObject(tallWall56,477,442);
+        TallWall tallWall57 = new TallWall();
+        addObject(tallWall57,368,404);
+        TallWall tallWall58 = new TallWall();
+        addObject(tallWall58,406,407);
+        TallWall tallWall59 = new TallWall();
+        addObject(tallWall59,437,414);
+        tallWall57.setLocation(348,446);
+        tallWall58.setLocation(382,386);
+        tallWall59.setLocation(424,454);
+    }
+}
+
+//
+//
+
+//WALLS
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class WALLS here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class WALLS extends Actor
+{
+    public WALLS()
+    {
+        
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//LongWall
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongWall extends WALLS
+{
+    public LongWall() 
+    {
+        getImage().scale(getImage().getWidth() * 3,getImage().getHeight());
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//LongerWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongerWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongerWall extends WALLS
+{
+    public void LongerWall()
+    {
+        getImage().scale(getImage().getWidth() * 5,getImage().getHeight());
+    }
+    public void act()
+    {
+        
+    }
+}
+
+//
+//
+
+//LongestWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongestWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongestWall extends WALLS
+{
+    public LongestWall()
+    {
+        getImage().scale(getImage().getWidth() * 12,getImage().getHeight());
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//TallWall
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+
+public class TallWall extends WALLS
+{
+    public TallWall(){
+        getImage().scale(getImage().getWidth() / 3,getImage().getHeight() * 5);
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+// ShortWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+
+
+public class ShortWall extends WALLS
+{
+    /**
+     * Act - do whatever the ShortWall wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public ShortWall(){
+        getImage().scale(getImage().getWidth() / 3,getImage().getHeight() * 2);
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//Mouse
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Mouse here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Mouse extends Actor
+{
+    /**
+     * Act - do whatever the Mouse wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public Mouse() 
+    {
+        getImage().scale(getImage().getWidth() / 2,getImage().getHeight() / 2);
+    }
+    public void act()
+    {
+       moveAround();
+       hitWALL();
+       hitEnemy();
+       hitTeleporter();
+    }
+    public void moveAround()
+    {
+        if(Greenfoot.isKeyDown("right")){
+            setLocation(getX() + 3, getY());
+            if(hitWALL() == true)
+            {
+                setLocation(getX() - 3, getY());
+            }
+        }
+        if(Greenfoot.isKeyDown("left")){
+            setLocation(getX() - 3, getY());
+            if(hitWALL() == true)
+            {
+                setLocation(getX() + 3, getY());
+            }
+        }
+        if(Greenfoot.isKeyDown("up")){
+            setLocation(getX(), getY() - 3);
+            if(hitWALL() == true)
+            {
+                setLocation(getX(), getY() + 3);
+            }
+        }
+        if(Greenfoot.isKeyDown("down")){
+            setLocation(getX(), getY() + 3);
+            if(hitWALL() == true)
+            {
+                setLocation(getX(), getY() - 3);
+            }
+        }
+    }
+    public boolean hitWALL()
+    {
+        if(isTouching(WALLS.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public void hitEnemy()
+    {
+        if(getOneIntersectingObject(cheesePizza.class)!= null)
+        {
+            getWorld().removeObject(getOneIntersectingObject(cheesePizza.class));
+        }
+    }
+    public void hitTeleporter()
+    {
+        if(isTouching(Teleporter.class))
+        {
+            setLocation(27, 561);
+        }
+    }
+}
+
+//
+//
+
+//cheesePizza
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class cheesePizza here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class cheesePizza extends Actor
+{
+    /**
+     * Act - do whatever the cheesePizza wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//Teleporter
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Teleporter here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Teleporter extends Actor
+{
+    /**
+     * Act - do whatever the Teleporter wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Greenfoot Tutorial 6 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//MyWorld
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MyWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MyWorld extends World
+{
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    public int time = 0;
+    public MyWorld()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(800, 600, 1); 
+        prepare();
+        
+    }
+    public void act()
+    {
+        time++;
+        if(time % 360 == 0){
+            addObject(new Enemy(), Greenfoot.getRandomNumber(750), Greenfoot.getRandomNumber (550));
+        }
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Enemy enemy = new Enemy();
+        addObject(enemy,Greenfoot.getRandomNumber(749),Greenfoot.getRandomNumber(550));
+        
+        TallWall tallWall = new TallWall();
+        addObject(tallWall,32,551);
+        TallWall tallWall2 = new TallWall();
+        addObject(tallWall2,32,477);
+        TallWall tallWall3 = new TallWall();
+        addObject(tallWall3,34,400);
+        TallWall tallWall4 = new TallWall();
+        addObject(tallWall4,34,326);
+        TallWall tallWall5 = new TallWall();
+        addObject(tallWall5,34,257);
+        TallWall tallWall6 = new TallWall();
+        addObject(tallWall6,32,173);
+        TallWall tallWall7 = new TallWall();
+        addObject(tallWall7,33,84);
+        TallWall tallWall8 = new TallWall();
+        addObject(tallWall8,31,126);
+        tallWall6.setLocation(35,215);
+        tallWall6.setLocation(34,148);
+        tallWall7.setLocation(32,41);
+        TallWall tallWall9 = new TallWall();
+        addObject(tallWall9,752,524);
+        TallWall tallWall10 = new TallWall();
+        addObject(tallWall10,750,444);
+        TallWall tallWall11 = new TallWall();
+        addObject(tallWall11,750,355);
+        TallWall tallWall12 = new TallWall();
+        addObject(tallWall12,748,281);
+        TallWall tallWall13 = new TallWall();
+        addObject(tallWall13,751,206);
+        TallWall tallWall14 = new TallWall();
+        addObject(tallWall14,748,127);
+        TallWall tallWall15 = new TallWall();
+        addObject(tallWall15,748,76);
+        TallWall tallWall16 = new TallWall();
+        addObject(tallWall16,753,394);
+        tallWall9.setLocation(751,531);
+        tallWall10.setLocation(755,492);
+        tallWall11.setLocation(752,309);
+        tallWall12.setLocation(749,263);
+        tallWall13.setLocation(751,206);
+        tallWall14.setLocation(752,154);
+        tallWall15.setLocation(750,73);
+        LongestWall longestWall = new LongestWall();
+        addObject(longestWall,152,37);
+        LongestWall longestWall2 = new LongestWall();
+        addObject(longestWall2,484,37);
+        longestWall2.setLocation(562,28);
+        longestWall.setLocation(380,26);
+        LongestWall longestWall3 = new LongestWall();
+        addObject(longestWall3,257,576);
+        LongestWall longestWall4 = new LongestWall();
+        addObject(longestWall4,510,579);
+        longestWall3.setLocation(220,579);
+        longestWall4.setLocation(430,585);
+        Mouse mouse = new Mouse();
+        addObject(mouse,110,78);
+        ShortWall shortWall = new ShortWall();
+        addObject(shortWall,106,129);
+        ShortWall shortWall2 = new ShortWall();
+        addObject(shortWall2,107,159);
+        LongerWall longerWall = new LongerWall();
+        addObject(longerWall,171,120);
+        LongerWall longerWall2 = new LongerWall();
+        addObject(longerWall2,144,122);
+        LongerWall longerWall3 = new LongerWall();
+        addObject(longerWall3,123,121);
+        longerWall.setLocation(164,122);
+        LongestWall longestWall5 = new LongestWall();
+        addObject(longestWall5,164,122);
+        longestWall5.setLocation(1191,131);
+        removeObject(longestWall5);
+        longerWall.setLocation(195,119);
+        longerWall2.setLocation(164,117);
+        longerWall3.setLocation(131,112);
+        longerWall2.setLocation(163,111);
+        longerWall.setLocation(195,120);
+        LongerWall longerWall4 = new LongerWall();
+        addObject(longerWall4,231,122);
+        LongerWall longerWall5 = new LongerWall();
+        addObject(longerWall5,274,123);
+        LongerWall longerWall6 = new LongerWall();
+        addObject(longerWall6,321,124);
+        LongerWall longerWall7 = new LongerWall();
+        addObject(longerWall7,367,125);
+        LongerWall longerWall8 = new LongerWall();
+        addObject(longerWall8,438,128);
+        longerWall8.setLocation(423,126);
+        LongerWall longerWall9 = new LongerWall();
+        addObject(longerWall9,423,126);
+        LongerWall longerWall10 = new LongerWall();
+        addObject(longerWall10,511,131);
+        LongerWall longerWall11 = new LongerWall();
+        addObject(longerWall11,535,127);
+        LongerWall longerWall12 = new LongerWall();
+        addObject(longerWall12,593,137);
+        longerWall12.setLocation(597,134);
+        longestWall2.setLocation(749,90);
+        LongerWall longerWall13 = new LongerWall();
+        addObject(longerWall13,749,90);
+        longestWall2.setLocation(648,33);
+        longerWall13.setLocation(651,154);
+        LongerWall longerWall14 = new LongerWall();
+        addObject(longerWall14,118,223);
+        longerWall14.setLocation(129,234);
+        LongerWall longerWall15 = new LongerWall();
+        addObject(longerWall15,129,234);
+        LongerWall longerWall16 = new LongerWall();
+        addObject(longerWall16,199,269);
+        longerWall16.setLocation(205,271);
+        LongerWall longerWall17 = new LongerWall();
+        addObject(longerWall17,205,271);
+        LongerWall longerWall18 = new LongerWall();
+        addObject(longerWall18,257,240);
+        LongerWall longerWall19 = new LongerWall();
+        addObject(longerWall19,328,220);
+        LongerWall longerWall20 = new LongerWall();
+        addObject(longerWall20,337,248);
+        LongerWall longerWall21 = new LongerWall();
+        addObject(longerWall21,350,296);
+        longerWall21.setLocation(350,296);
+        longerWall21.setLocation(368,278);
+        LongerWall longerWall22 = new LongerWall();
+        addObject(longerWall22,368,278);
+        LongerWall longerWall23 = new LongerWall();
+        addObject(longerWall23,405,237);
+        LongerWall longerWall24 = new LongerWall();
+        addObject(longerWall24,473,214);
+        LongerWall longerWall25 = new LongerWall();
+        addObject(longerWall25,478,255);
+        LongerWall longerWall26 = new LongerWall();
+        addObject(longerWall26,488,287);
+        LongerWall longerWall27 = new LongerWall();
+        addObject(longerWall27,517,354);
+        longerWall27.setLocation(517,354);
+        LongerWall longerWall28 = new LongerWall();
+        addObject(longerWall28,519,313);
+        LongerWall longerWall29 = new LongerWall();
+        addObject(longerWall29,546,260);
+        longerWall29.setLocation(547,260);
+        LongerWall longerWall30 = new LongerWall();
+        addObject(longerWall30,574,322);
+        LongerWall longerWall31 = new LongerWall();
+        addObject(longerWall31,577,349);
+        LongerWall longerWall32 = new LongerWall();
+        addObject(longerWall32,578,382);
+        LongerWall longerWall33 = new LongerWall();
+        addObject(longerWall33,527,427);
+        LongerWall longerWall34 = new LongerWall();
+        addObject(longerWall34,392,419);
+        LongerWall longerWall35 = new LongerWall();
+        addObject(longerWall35,361,397);
+        LongerWall longerWall36 = new LongerWall();
+        addObject(longerWall36,353,367);
+        LongerWall longerWall37 = new LongerWall();
+        addObject(longerWall37,422,308);
+        LongerWall longerWall38 = new LongerWall();
+        addObject(longerWall38,446,364);
+        LongerWall longerWall39 = new LongerWall();
+        addObject(longerWall39,480,418);
+        LongerWall longerWall40 = new LongerWall();
+        addObject(longerWall40,449,438);
+        LongerWall longerWall41 = new LongerWall();
+        addObject(longerWall41,181,456);
+        LongerWall longerWall42 = new LongerWall();
+        addObject(longerWall42,177,416);
+        LongerWall longerWall43 = new LongerWall();
+        addObject(longerWall43,200,351);
+        LongerWall longerWall44 = new LongerWall();
+        addObject(longerWall44,265,296);
+        LongerWall longerWall45 = new LongerWall();
+        addObject(longerWall45,374,404);
+        LongerWall longerWall46 = new LongerWall();
+        addObject(longerWall46,361,466);
+        longerWall46.setLocation(361,466);
+        LongerWall longerWall47 = new LongerWall();
+        addObject(longerWall47,361,466);
+        LongerWall longerWall48 = new LongerWall();
+        addObject(longerWall48,329,420);
+        LongerWall longerWall49 = new LongerWall();
+        addObject(longerWall49,311,392);
+        LongerWall longerWall50 = new LongerWall();
+        addObject(longerWall50,291,362);
+        LongerWall longerWall51 = new LongerWall();
+        addObject(longerWall51,283,345);
+        longerWall51.setLocation(366,327);
+        LongerWall longerWall52 = new LongerWall();
+        addObject(longerWall52,366,327);
+        LongerWall longerWall53 = new LongerWall();
+        addObject(longerWall53,418,335);
+        LongerWall longerWall54 = new LongerWall();
+        addObject(longerWall54,406,374);
+        LongerWall longerWall55 = new LongerWall();
+        addObject(longerWall55,406,412);
+        LongerWall longerWall56 = new LongerWall();
+        addObject(longerWall56,410,420);
+        LongerWall longerWall57 = new LongerWall();
+        addObject(longerWall57,463,409);
+        LongerWall longerWall58 = new LongerWall();
+        addObject(longerWall58,526,373);
+        LongerWall longerWall59 = new LongerWall();
+        addObject(longerWall59,553,352);
+        LongerWall longerWall60 = new LongerWall();
+        addObject(longerWall60,630,313);
+        LongerWall longerWall61 = new LongerWall();
+        addObject(longerWall61,627,280);
+        LongerWall longerWall62 = new LongerWall();
+        addObject(longerWall62,634,360);
+        LongerWall longerWall63 = new LongerWall();
+        addObject(longerWall63,661,450);
+        longerWall63.setLocation(664,450);
+        longerWall63.setLocation(667,438);
+        LongerWall longerWall64 = new LongerWall();
+        addObject(longerWall64,674,358);
+        LongerWall longerWall65 = new LongerWall();
+        addObject(longerWall65,677,293);
+        LongerWall longerWall66 = new LongerWall();
+        addObject(longerWall66,685,247);
+        LongerWall longerWall67 = new LongerWall();
+        addObject(longerWall67,687,238);
+        LongerWall longerWall68 = new LongerWall();
+        addObject(longerWall68,674,329);
+        longerWall64.setLocation(674,356);
+        LongerWall longerWall69 = new LongerWall();
+        addObject(longerWall69,674,356);
+        LongerWall longerWall70 = new LongerWall();
+        addObject(longerWall70,674,385);
+        LongerWall longerWall71 = new LongerWall();
+        addObject(longerWall71,656,445);
+        longerWall71.setLocation(632,459);
+        LongerWall longerWall72 = new LongerWall();
+        addObject(longerWall72,632,459);
+        LongerWall longerWall73 = new LongerWall();
+        addObject(longerWall73,605,463);
+        LongerWall longerWall74 = new LongerWall();
+        addObject(longerWall74,583,436);
+        LongerWall longerWall75 = new LongerWall();
+        addObject(longerWall75,586,396);
+        LongerWall longerWall76 = new LongerWall();
+        addObject(longerWall76,601,316);
+        LongerWall longerWall77 = new LongerWall();
+        addObject(longerWall77,599,260);
+        LongerWall longerWall78 = new LongerWall();
+        addObject(longerWall78,592,238);
+        LongerWall longerWall79 = new LongerWall();
+        addObject(longerWall79,587,227);
+        LongerWall longerWall80 = new LongerWall();
+        addObject(longerWall80,585,247);
+        longerWall3.setLocation(120,113);
+        longerWall2.setLocation(160,114);
+        longerWall.setLocation(173,109);
+        longerWall4.setLocation(211,116);
+        longerWall6.setLocation(241,117);
+        longerWall5.setLocation(305,112);
+        longerWall6.setLocation(284,109);
+        longerWall7.setLocation(337,114);
+        longerWall8.setLocation(419,108);
+        longerWall8.setLocation(441,108);
+        longerWall10.setLocation(476,157);
+        longerWall11.setLocation(499,157);
+        longerWall12.setLocation(639,111);
+        ShortWall shortWall3 = new ShortWall();
+        addObject(shortWall3,371,134);
+        shortWall3.setLocation(368,134);
+        shortWall3.setLocation(721,159);
+        removeObject(shortWall3);
+        TallWall tallWall17 = new TallWall();
+        addObject(tallWall17,352,162);
+        tallWall17.setLocation(457,90);
+        TallWall tallWall18 = new TallWall();
+        addObject(tallWall18,437,162);
+        tallWall18.setLocation(463,135);
+        TallWall tallWall19 = new TallWall();
+        addObject(tallWall19,52,214);
+        tallWall19.setLocation(53,214);
+        tallWall19.setLocation(668,219);
+        longerWall79.setLocation(52,213);
+        longerWall14.setLocation(67,211);
+        longerWall15.setLocation(106,210);
+        longerWall16.setLocation(135,214);
+        longerWall16.setLocation(160,211);
+        tallWall19.setLocation(152,195);
+        longerWall16.setLocation(255,172);
+        TallWall tallWall20 = new TallWall();
+        addObject(tallWall20,310,171);
+        tallWall20.setLocation(277,150);
+        longerWall16.setLocation(269,175);
+        TallWall tallWall21 = new TallWall();
+        addObject(tallWall21,214,173);
+        TallWall tallWall22 = new TallWall();
+        addObject(tallWall22,217,248);
+        tallWall21.setLocation(197,160);
+        tallWall22.setLocation(150,269);
+        longerWall18.setLocation(169,227);
+        longerWall22.setLocation(351,295);
+        longerWall19.setLocation(173,224);
+        longerWall20.setLocation(210,231);
+        longerWall23.setLocation(246,230);
+        longerWall25.setLocation(273,230);
+        longerWall21.setLocation(293,225);
+        TallWall tallWall23 = new TallWall();
+        addObject(tallWall23,400,234);
+        TallWall tallWall24 = new TallWall();
+        addObject(tallWall24,444,247);
+        TallWall tallWall25 = new TallWall();
+        addObject(tallWall25,515,252);
+        TallWall tallWall26 = new TallWall();
+        addObject(tallWall26,546,193);
+        TallWall tallWall27 = new TallWall();
+        addObject(tallWall27,602,154);
+        TallWall tallWall28 = new TallWall();
+        addObject(tallWall28,622,197);
+        TallWall tallWall29 = new TallWall();
+        addObject(tallWall29,651,220);
+        TallWall tallWall30 = new TallWall();
+        addObject(tallWall30,652,260);
+        TallWall tallWall31 = new TallWall();
+        addObject(tallWall31,659,327);
+        tallWall23.setLocation(305,196);
+        tallWall24.setLocation(347,144);
+        tallWall26.setLocation(350,239);
+        tallWall25.setLocation(352,261);
+        longerWall22.setLocation(335,279);
+        longerWall44.setLocation(307,285);
+        longerWall38.setLocation(273,284);
+        longerWall50.setLocation(251,287);
+        tallWall23.setLocation(312,209);
+        longerWall37.setLocation(300,229);
+        longerWall51.setLocation(216,284);
+        longerWall43.setLocation(207,283);
+        tallWall27.setLocation(197,349);
+        longerWall53.setLocation(180,348);
+        longerWall51.setLocation(157,356);
+        longerWall54.setLocation(117,355);
+        longerWall36.setLocation(91,348);
+        tallWall30.setLocation(97,322);
+        longerWall67.setLocation(46,275);
+        longerWall36.setLocation(97,353);
+        longerWall77.setLocation(77,356);
+        tallWall31.setLocation(68,367);
+        longerWall33.setLocation(73,404);
+        longerWall56.setLocation(110,403);
+        longerWall33.setLocation(79,402);
+        tallWall31.setLocation(66,387);
+        longerWall42.setLocation(128,409);
+        longerWall41.setLocation(153,405);
+        tallWall29.setLocation(405,156);
+        longerWall78.setLocation(367,224);
+        longerWall26.setLocation(389,233);
+        longerWall24.setLocation(409,233);
+        longerWall29.setLocation(432,224);
+        longerWall24.setLocation(414,220);
+        longerWall26.setLocation(405,226);
+        longerWall28.setLocation(479,221);
+        longerWall78.setLocation(507,221);
+        longerWall61.setLocation(526,221);
+        tallWall28.setLocation(564,206);
+        longerWall60.setLocation(548,222);
+        TallWall tallWall32 = new TallWall();
+        addObject(tallWall32,617,221);
+        TallWall tallWall33 = new TallWall();
+        addObject(tallWall33,666,251);
+        TallWall tallWall34 = new TallWall();
+        addObject(tallWall34,648,290);
+        tallWall34.setLocation(648,310);
+        tallWall34.setLocation(647,348);
+        TallWall tallWall35 = new TallWall();
+        addObject(tallWall35,647,348);
+        tallWall35.setLocation(643,375);
+        TallWall tallWall36 = new TallWall();
+        addObject(tallWall36,643,375);
+        TallWall tallWall37 = new TallWall();
+        addObject(tallWall37,617,419);
+        TallWall tallWall38 = new TallWall();
+        addObject(tallWall38,611,409);
+        TallWall tallWall39 = new TallWall();
+        addObject(tallWall39,598,352);
+        tallWall37.setLocation(517,113);
+        tallWall32.setLocation(567,131);
+        longerWall12.setLocation(570,90);
+        longerWall13.setLocation(611,92);
+        longerWall68.setLocation(580,221);
+        tallWall33.setLocation(621,124);
+        tallWall34.setLocation(673,108);
+        tallWall35.setLocation(673,128);
+        tallWall33.setLocation(641,140);
+        tallWall35.setLocation(692,141);
+        tallWall33.setLocation(639,141);
+        longerWall66.setLocation(628,85);
+        longerWall64.setLocation(713,96);
+        longerWall65.setLocation(737,148);
+        longerWall65.setLocation(729,96);
+        longerWall66.setLocation(632,89);
+        longerWall70.setLocation(643,220);
+        longerWall75.setLocation(672,226);
+        longerWall32.setLocation(712,220);
+        longerWall31.setLocation(733,225);
+        tallWall34.setLocation(592,256);
+        tallWall39.setLocation(568,395);
+        longerWall76.setLocation(582,159);
+        longerWall74.setLocation(608,287);
+        longerWall30.setLocation(636,287);
+        longerWall62.setLocation(662,292);
+        longerWall64.setLocation(695,287);
+        longerWall64.setLocation(698,287);
+        longerWall58.setLocation(576,460);
+        tallWall36.setLocation(703,335);
+        longerWall63.setLocation(741,418);
+        longerWall71.setLocation(723,421);
+        tallWall38.setLocation(665,404);
+        tallWall39.setLocation(660,332);
+        longerWall59.setLocation(686,422);
+        longerWall41.setLocation(164,402);
+        LongerWall longerWall81 = new LongerWall();
+        addObject(longerWall81,253,469);
+        LongerWall longerWall82 = new LongerWall();
+        addObject(longerWall82,317,480);
+        LongerWall longerWall83 = new LongerWall();
+        addObject(longerWall83,320,514);
+        longerWall83.setLocation(373,479);
+        LongerWall longerWall84 = new LongerWall();
+        addObject(longerWall84,373,479);
+        longerWall84.setLocation(397,469);
+        LongerWall longerWall85 = new LongerWall();
+        addObject(longerWall85,397,469);
+        LongerWall longerWall86 = new LongerWall();
+        addObject(longerWall86,435,501);
+        longerWall86.setLocation(439,506);
+        LongerWall longerWall87 = new LongerWall();
+        addObject(longerWall87,439,506);
+        LongerWall longerWall88 = new LongerWall();
+        addObject(longerWall88,508,456);
+        LongerWall longerWall89 = new LongerWall();
+        addObject(longerWall89,512,448);
+        LongerWall longerWall90 = new LongerWall();
+        addObject(longerWall90,530,448);
+        LongerWall longerWall91 = new LongerWall();
+        addObject(longerWall91,528,494);
+        longerWall91.setLocation(555,398);
+        longerWall91.setLocation(557,395);
+        LongerWall longerWall92 = new LongerWall();
+        addObject(longerWall92,557,395);
+        longerWall91.setLocation(562,413);
+        LongerWall longerWall93 = new LongerWall();
+        addObject(longerWall93,567,436);
+        LongerWall longerWall94 = new LongerWall();
+        addObject(longerWall94,604,350);
+        longerWall94.setLocation(607,345);
+        LongerWall longerWall95 = new LongerWall();
+        addObject(longerWall95,607,345);
+        longerWall94.setLocation(607,352);
+        LongerWall longerWall96 = new LongerWall();
+        addObject(longerWall96,610,405);
+        longerWall96.setLocation(609,409);
+        LongerWall longerWall97 = new LongerWall();
+        addObject(longerWall97,609,409);
+        longerWall96.setLocation(609,411);
+        LongerWall longerWall98 = new LongerWall();
+        addObject(longerWall98,570,353);
+        LongerWall longerWall99 = new LongerWall();
+        addObject(longerWall99,536,320);
+        LongerWall longerWall100 = new LongerWall();
+        addObject(longerWall100,433,261);
+        LongerWall longerWall101 = new LongerWall();
+        addObject(longerWall101,468,311);
+        longerWall101.setLocation(463,332);
+        LongerWall longerWall102 = new LongerWall();
+        addObject(longerWall102,463,332);
+        LongerWall longerWall103 = new LongerWall();
+        addObject(longerWall103,461,368);
+        LongerWall longerWall104 = new LongerWall();
+        addObject(longerWall104,461,381);
+        LongerWall longerWall105 = new LongerWall();
+        addObject(longerWall105,464,406);
+        longerWall39.setLocation(476,440);
+        LongerWall longerWall106 = new LongerWall();
+        addObject(longerWall106,476,440);
+        LongerWall longerWall107 = new LongerWall();
+        addObject(longerWall107,500,486);
+        LongerWall longerWall108 = new LongerWall();
+        addObject(longerWall108,501,495);
+        longerWall108.setLocation(502,499);
+        longerWall49.setLocation(185,407);
+        longerWall35.setLocation(207,400);
+        longerWall81.setLocation(41,459);
+        longerWall48.setLocation(287,402);
+        longerWall45.setLocation(237,349);
+        longerWall34.setLocation(266,352);
+        longerWall55.setLocation(291,347);
+        longerWall57.setLocation(324,352);
+        longerWall104.setLocation(363,358);
+        longerWall104.setLocation(350,358);
+        longerWall101.setLocation(365,280);
+        longerWall100.setLocation(389,283);
+        longerWall101.setLocation(468,285);
+        longerWall99.setLocation(495,282);
+        longerWall82.setLocation(74,463);
+        longerWall46.setLocation(142,460);
+        longerWall46.setLocation(167,464);
+        longerWall83.setLocation(161,463);
+        longerWall46.setLocation(208,464);
+        longerWall84.setLocation(230,464);
+        longerWall86.setLocation(55,525);
+        longerWall86.setLocation(131,523);
+        longerWall87.setLocation(104,523);
+        longerWall86.setLocation(127,527);
+        TallWall tallWall40 = new TallWall();
+        addObject(tallWall40,392,421);
+        TallWall tallWall41 = new TallWall();
+        addObject(tallWall41,403,387);
+        TallWall tallWall42 = new TallWall();
+        addObject(tallWall42,431,353);
+        tallWall42.setLocation(435,352);
+        TallWall tallWall43 = new TallWall();
+        addObject(tallWall43,470,341);
+        TallWall tallWall44 = new TallWall();
+        addObject(tallWall44,513,328);
+        TallWall tallWall45 = new TallWall();
+        addObject(tallWall45,524,326);
+        TallWall tallWall46 = new TallWall();
+        addObject(tallWall46,546,326);
+        TallWall tallWall47 = new TallWall();
+        addObject(tallWall47,587,367);
+        TallWall tallWall48 = new TallWall();
+        addObject(tallWall48,590,411);
+        longerWall58.setLocation(586,468);
+        TallWall tallWall49 = new TallWall();
+        addObject(tallWall49,586,468);
+        TallWall tallWall50 = new TallWall();
+        addObject(tallWall50,518,496);
+        TallWall tallWall51 = new TallWall();
+        addObject(tallWall51,477,497);
+        TallWall tallWall52 = new TallWall();
+        addObject(tallWall52,458,498);
+        TallWall tallWall53 = new TallWall();
+        addObject(tallWall53,407,477);
+        tallWall53.setLocation(90,486);
+        tallWall52.setLocation(198,508);
+        tallWall51.setLocation(285,450);
+        longerWall84.setLocation(258,470);
+        longerWall107.setLocation(268,464);
+        tallWall41.setLocation(459,311);
+        longerWall103.setLocation(367,352);
+        longerWall104.setLocation(358,355);
+        longerWall57.setLocation(398,350);
+        longerWall40.setLocation(429,355);
+        longerWall39.setLocation(450,352);
+        tallWall44.setLocation(509,329);
+        tallWall45.setLocation(451,495);
+        tallWall43.setLocation(467,456);
+        tallWall42.setLocation(428,469);
+        longerWall40.setLocation(416,351);
+        longerWall40.setLocation(422,349);
+        longerWall103.setLocation(379,349);
+        longerWall104.setLocation(351,346);
+        longerWall104.setLocation(333,349);
+        longerWall55.setLocation(299,345);
+        longerWall34.setLocation(273,349);
+        longerWall45.setLocation(243,349);
+        tallWall46.setLocation(541,568);
+        tallWall46.setLocation(544,480);
+        tallWall49.setLocation(543,472);
+        tallWall48.setLocation(597,514);
+        tallWall45.setLocation(238,550);
+        tallWall42.setLocation(281,515);
+        tallWall40.setLocation(345,577);
+        tallWall50.setLocation(401,521);
+        longerWall108.setLocation(293,470);
+        longerWall88.setLocation(324,470);
+        longerWall89.setLocation(343,464);
+        longerWall90.setLocation(373,467);
+        longerWall89.setLocation(355,466);
+        longerWall88.setLocation(328,467);
+        longerWall108.setLocation(297,465);
+        longerWall90.setLocation(384,467);
+        tallWall50.setLocation(395,480);
+        longerWall39.setLocation(509,461);
+        longerWall91.setLocation(508,435);
+        tallWall47.setLocation(588,401);
+        longerWall94.setLocation(422,464);
+        longerWall39.setLocation(434,464);
+        tallWall43.setLocation(463,578);
+        tallWall49.setLocation(522,514);
+        longerWall91.setLocation(473,469);
+        longerWall92.setLocation(488,464);
+        tallWall46.setLocation(573,571);
+        longerWall58.setLocation(540,472);
+        longerWall93.setLocation(517,465);
+        longerWall92.setLocation(491,470);
+        longerWall93.setLocation(629,425);
+        tallWall49.setLocation(514,471);
+        longerWall58.setLocation(533,467);
+        longerWall58.setLocation(586,411);
+        tallWall48.setLocation(574,466);
+        longerWall58.setLocation(559,400);
+        tallWall47.setLocation(587,375);
+        longerWall58.setLocation(573,396);
+        longerWall96.setLocation(603,391);
+        longerWall96.setLocation(591,443);
+        longerWall96.setLocation(668,506);
+        TallWall tallWall54 = new TallWall();
+        addObject(tallWall54,664,498);
+        TallWall tallWall55 = new TallWall();
+        addObject(tallWall55,718,496);
+        longerWall73.setLocation(462,412);
+        longerWall72.setLocation(490,389);
+        longerWall93.setLocation(533,420);
+        longerWall96.setLocation(613,440);
+        longerWall96.setLocation(591,464);
+        longerWall93.setLocation(546,387);
+        longerWall96.setLocation(596,513);
+        tallWall55.setLocation(614,517);
+        longerWall96.setLocation(594,533);
+        longerWall93.setLocation(539,388);
+        longerWall72.setLocation(504,397);
+        longerWall73.setLocation(477,393);
+        TallWall tallWall56 = new TallWall();
+        addObject(tallWall56,477,442);
+        TallWall tallWall57 = new TallWall();
+        addObject(tallWall57,368,404);
+        TallWall tallWall58 = new TallWall();
+        addObject(tallWall58,406,407);
+        TallWall tallWall59 = new TallWall();
+        addObject(tallWall59,437,414);
+        tallWall57.setLocation(348,446);
+        tallWall58.setLocation(382,386);
+        tallWall59.setLocation(424,454);
+    }
+}
+
+//
+//
+
+//WALLS
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class WALLS here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class WALLS extends Actor
+{
+    public WALLS()
+    {
+        
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//LongWall
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongWall extends WALLS
+{
+    public LongWall() 
+    {
+        getImage().scale(getImage().getWidth() * 3,getImage().getHeight());
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//LongerWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongerWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongerWall extends WALLS
+{
+    public void LongerWall()
+    {
+        getImage().scale(getImage().getWidth() * 5,getImage().getHeight());
+    }
+    public void act()
+    {
+        
+    }
+}
+
+//
+//
+
+//LongestWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class LongestWall here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LongestWall extends WALLS
+{
+    public LongestWall()
+    {
+        getImage().scale(getImage().getWidth() * 12,getImage().getHeight());
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//TallWall
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+
+public class TallWall extends WALLS
+{
+    public TallWall(){
+        getImage().scale(getImage().getWidth() / 3,getImage().getHeight() * 5);
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+// ShortWall
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+
+
+public class ShortWall extends WALLS
+{
+    /**
+     * Act - do whatever the ShortWall wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public ShortWall(){
+        getImage().scale(getImage().getWidth() / 3,getImage().getHeight() * 2);
+    }
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//Enemy
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Enemy here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Enemy extends Actor
+{
+    /**
+     * Act - do whatever the Enemy wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        moveAround();
+    }
+    public void moveAround()
+    {
+        move(3);
+        turn(3); 
+    }
+}
+
+//
+//
+
+//Mouse
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Mouse here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Mouse extends Actor
+{
+    /**
+     * Act - do whatever the Mouse wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public Mouse() 
+    {
+        getImage().scale(getImage().getWidth() / 2,getImage().getHeight() / 2);
+    }
+    public void act()
+    {
+       moveAround();
+       hitWALL();
+       hitFood(); 
+       hitEnemy();
+       hitTeleporter();
+       youLose();
+    }
+    public void moveAround()
+    {
+        if(Greenfoot.isKeyDown("right")){
+            setLocation(getX() + 3, getY());
+            if(hitWALL() == true)
+            {
+                setLocation(getX() - 3, getY());
+            }
+        }
+        if(Greenfoot.isKeyDown("left")){
+            setLocation(getX() - 3, getY());
+            if(hitWALL() == true)
+            {
+                setLocation(getX() + 3, getY());
+            }
+        }
+        if(Greenfoot.isKeyDown("up")){
+            setLocation(getX(), getY() - 3);
+            if(hitWALL() == true)
+            {
+                setLocation(getX(), getY() + 3);
+            }
+        }
+        if(Greenfoot.isKeyDown("down")){
+            setLocation(getX(), getY() + 3);
+            if(hitWALL() == true)
+            {
+                setLocation(getX(), getY() - 3);
+            }
+        }
+    }
+    public boolean hitWALL()
+    {
+        if(isTouching(WALLS.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public void hitFood()
+    {
+        if(getOneIntersectingObject(cheesePizza.class)!= null)
+        {
+            getWorld().removeObject(getOneIntersectingObject(cheesePizza.class));
+        }
+    }
+    public void hitTeleporter()
+    {
+        if(isTouching(Teleporter.class))
+        {
+            setLocation(27, 561);
+        }
+    }
+    public boolean hitEnemy()
+    {
+        if(isTouching(Enemy.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public void youLose()
+    {
+        if(hitEnemy())
+        {
+            getWorld().addObject(new YouLose(), 375, 275);
+        }
+    }
+}
+
+//
+//
+
+//Teleporter
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Teleporter here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Teleporter extends Actor
+{
+    /**
+     * Act - do whatever the Teleporter wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//YouLose
+//
+
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class YouLose here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class YouLose extends Actor
+{
+    /**
+     * Act - do whatever the YouLose wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+//cheesePizza
+//
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class cheesePizza here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class cheesePizza extends Actor
+{
+    /**
+     * Act - do whatever the cheesePizza wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        // Add your action code here.
+    }
+}
+
+//
+//
+
+
+
+
+
+
+
